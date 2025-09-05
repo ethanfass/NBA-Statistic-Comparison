@@ -21,7 +21,7 @@ A React + Flask app for comparing NBA players by season and career. Search playe
 # Setup
 ## Backend
 
-'''text
+```text
 cd backend
 pip install flask flask-cors nba_api pandas
 python server.py
