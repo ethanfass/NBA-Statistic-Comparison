@@ -40,5 +40,6 @@ npm start
 ## Notes
 
 - Season format: YY-YY (e.g. 24-25)
+- Only contains season data post NBA ABA merger (post 1976)
 - If you only see ~10 players, that’s the fallback list (full list needs NBA API access).
 - Keep both backend and frontend running at the same time.
