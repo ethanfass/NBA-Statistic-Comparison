@@ -1,2 +1,52 @@
-# NBA-Statistic-Comparison
-An interactive NBA statistics app that allows you to compare two players side by side. Users can explore individual season stats as well as full career summaries to analyze performance trends and differences.
+NBA Player Comparison App
+
+A React + Flask app for comparing NBA players by season and career. Search players, pick seasons, and view stats in tables and radar charts.
+
+Features
+
+Search for players with autocomplete
+
+Select seasons (e.g. 24-25)
+
+Side-by-side season averages with highlights
+
+Season and career radar charts (normalized)
+
+Career averages table
+
+Fallback player list if NBA API isn’t available
+
+Tech Stack
+
+Frontend: React, Recharts, CSS
+
+Backend: Flask (Python), Flask-CORS, pandas, nba_api
+
+Setup
+Backend
+cd backend
+pip install flask flask-cors nba_api pandas
+python server.py
+
+
+Runs at http://127.0.0.1:5000
+
+Test with http://127.0.0.1:5000/health
+
+Frontend
+cd frontend
+npm install
+npm start
+
+
+Opens at http://localhost:3000
+
+(Optional) add "proxy": "http://127.0.0.1:5000" to frontend/package.json to avoid CORS issues.
+
+Notes
+
+Season format: YY-YY (e.g. 24-25)
+
+If you only see ~10 players, that’s the fallback list (full list needs NBA API access).
+
+Keep both backend and frontend running at the same time.
